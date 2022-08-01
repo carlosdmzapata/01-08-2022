@@ -1,3 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+    font-weight: bold;
+}
+
+
+.table-hover {
+    color: white;
+}
+
+.contenedorLoSi {
+    display: flex;
+    justify-content: flex-end;
+    padding: 2%;
+    background: linear-gradient(to bottom, #1D4350, #182848) ;
+    color: whitesmoke;
+}
+
+.cajaFraseHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30%;
+    color: white;
+    text-shadow: 0.2em 0.2em 0.2em #252525;
+}
+
+.cajaLogo {
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+    padding: 3%;
+}
+
+h1 {
+    transform: translate(-200px, 0);
+}
+
+.colorRedes {
+    background-color: #182848;
+}
+
+footer {
+    background-color: #182848;
+    padding: 1%;
+    color: whitesmoke;
+}
+
+.contenedorMain {
+    display: inline-block;
+    background-color: #1D4350;
+}
+
 .nav-menu {
     padding: 30px 0 0 0;
   }
@@ -76,3 +135,13 @@
   .mobile-nav-active #header {
     left: 0;
   }
+
+  .navbar {
+    padding-top: 20%;
+  }
+
+  .contenedorLogoFrase {
+    background: linear-gradient(to bottom, #1D4350, #182848);
+  }
+
+  
