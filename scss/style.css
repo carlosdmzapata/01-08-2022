@@ -25,7 +25,7 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-left: 30%;
+  padding-left: 17%;
   color: white;
   text-shadow: 0.2em 0.2em 0.2em #252525;
 }
@@ -154,4 +154,9 @@ footer {
 
 h6 {
   padding-right: 30%;
+}
+
+.texto {
+  color: #fff;
+  padding: 20%;
 }/*# sourceMappingURL=style.css.map */
