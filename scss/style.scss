@@ -144,4 +144,18 @@ footer {
     background: linear-gradient(to bottom, #1D4350, #182848);
   }
 
+  .rowBg-fluid {
+    background-image: url(../images/game.jpg);
+  }
+
+ .colorFondoTabla {
+    display: flex;
+    flex-direction: column;
+    opacity: 60%;
+ }
+
+ h6 {
+  padding-right: 30%;
+ }
+
   
