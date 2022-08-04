@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 * {
     margin: 0;
     padding: 0;
 }
+
+$title_font: bold 12px/1.5 'Roboto', sans-serif;
+
 
 li {
     list-style-type: none;
@@ -18,7 +23,20 @@ li {
     justify-content: flex-end;
     padding: 2%;
     background: linear-gradient(to bottom, #1D4350, #182848) ;
-    color: whitesmoke;
+    
+       .login {
+        color: #fff;
+             &:hover {
+               color: #6f7180;
+             }
+       }
+
+       .signUp {
+        color: #fff;
+             &:hover {
+               color: #6f7180;
+             }
+       }
 }
 
 .cajaFraseHeader {
@@ -174,5 +192,18 @@ footer {
  .carousel {
   padding: 10%;
  }
+ 
+.card {
+  margin: 10%;
 
+  .card-body {
+    background-color: #182848;
+    color: #a8a9b4;
+   }
+
+}
+
+footer {
+  font: $title_font;
+}
   

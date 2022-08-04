@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -17,7 +19,18 @@ li {
   justify-content: flex-end;
   padding: 2%;
   background: linear-gradient(to bottom, #1D4350, #182848);
-  color: whitesmoke;
+}
+.contenedorLoSi .login {
+  color: #fff;
+}
+.contenedorLoSi .login:hover {
+  color: #6f7180;
+}
+.contenedorLoSi .signUp {
+  color: #fff;
+}
+.contenedorLoSi .signUp:hover {
+  color: #6f7180;
 }
 
 .cajaFraseHeader {
@@ -171,4 +184,16 @@ h6 {
 
 .carousel {
   padding: 10%;
+}
+
+.card {
+  margin: 10%;
+}
+.card .card-body {
+  background-color: #182848;
+  color: #a8a9b4;
+}
+
+footer {
+  font: bold 12px/1.5 "Roboto", sans-serif;
 }/*# sourceMappingURL=style.css.map */
