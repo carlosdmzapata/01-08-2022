@@ -201,8 +201,6 @@ footer {
 .redes {
   display: flex;
   flex-direction: column;
-}
-
-.iconos {
+  padding: 20%;
   color: #a8a9b4;
 }/*# sourceMappingURL=style.css.map */
