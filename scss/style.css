@@ -196,4 +196,13 @@ h6 {
 
 footer {
   font: bold 12px/1.5 "Roboto", sans-serif;
+}
+
+.redes {
+  display: flex;
+  flex-direction: column;
+}
+
+.iconos {
+  color: #a8a9b4;
 }/*# sourceMappingURL=style.css.map */
