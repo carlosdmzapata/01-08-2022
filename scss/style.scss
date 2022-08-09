@@ -74,7 +74,7 @@ h1 {
 }
 
 footer {
-    background-color: #182848;
+  background: linear-gradient(to top, #1D4350, #182848) ;
     padding: 1%;
     color: whitesmoke;
 }
@@ -92,7 +92,6 @@ footer {
     margin: 0;
     padding: 0;
     list-style: none;
-    
   }
   
   .nav-menu>ul>li {
@@ -115,7 +114,7 @@ footer {
   .nav-menu a:focus i {
     font-size: 24px;
     padding-right: 8px;
-    color: #6f7180;
+   
   }
   
   .nav-menu a:hover,
@@ -163,8 +162,123 @@ footer {
     left: 0;
   }
 
+  .colorFondoTabla {
+    display: flex;
+    flex-direction: column;
+ }
+
+ .bg-dark {
+  border-radius: 10px;
+  border: #1DA1F2 1px solid;
+  background: linear-gradient(to bottom, #1D4350, #121e35);
+  box-shadow: inset 0px 0px 40px #0d1729,
+}
+
   .navbar {
+    margin-top: 5%;
+    margin-bottom: 1%;
     padding-top: 20%;
+    padding-bottom: 10%;
+    border-radius: 10px;
+    box-shadow: 5px 0px 0px 0.5px rgba(0,0,0,0.53);
+  }
+
+  .collapse {
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px 0.5px rgba(0,0,0,0.53);
+  }
+
+  .nav-menu {
+    border-radius: 10px; 
+  }
+
+  .menu {
+    opacity: 100%;
+    color: white;
+    z-index: 9999;
+    padding-right: 10%;
+    font-size:medium;
+  }
+
+  .navbar-toggler {
+    border: #1DA1F2 1px solid ;
+    transform-style: none;
+  }
+  
+
+
+  .l1 {
+    display: flex;
+    width: 140px;
+    justify-content: center;
+    background: linear-gradient(to top, #1D4350, #182848);
+    border: #1DA1F2 1px solid;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 40px black;
+    transition: all 0.1s; 
+  }
+  .l1:hover {
+    box-shadow: inset 0px 0px 0px black,
+  }
+  .l2 {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to top, #1D4350, #182848);
+    border: #1DA1F2 1px solid;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 40px black; 
+    transition: all 0.1s; 
+  }
+  .l2:hover {
+    box-shadow: inset 0px 0px 0px black,
+  }
+  .l3 {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to top, #1D4350, #182848);
+    border: #1DA1F2 1px solid;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 40px black; 
+    transition: all 0.1s; 
+  }
+  .l3:hover {
+    box-shadow: inset 0px 0px 0px black,
+  }
+  .l4 {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to top, #1D4350, #182848);
+    border: #1DA1F2 1px solid;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 40px black; 
+    transition: all 0.1s; 
+  }
+  .l4:hover {
+    box-shadow: inset 0px 0px 0px black,
+  }
+  .l5 {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to top, #1D4350, #182848);
+    border: #1DA1F2 1px solid;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 40px black; 
+    transition: all 0.1s; 
+  }
+  .l5:hover {
+    box-shadow: inset 0px 0px 0px black,
+  }
+  .l6 {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to top, #1D4350, #182848);
+    border: #1DA1F2 1px solid;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 40px black; 
+    transition: all 0.1s; 
+  }
+  .l6:hover {
+    box-shadow: inset 0px 0px 0px black;
   }
 
   .contenedorLogoFrase {
@@ -180,6 +294,7 @@ footer {
   @keyframes bordeLogoFrase {
     0% {
       border-image: linear-gradient(to right, #1DA1F2, #C546F7) 1;
+      border-radius: 10px;
     }
     25% {
       border-image: linear-gradient(to bottom, #1DA1F2, #C546F7) 1;
@@ -200,11 +315,6 @@ footer {
     background-image: url(../images/game.jpg);
   }
 
- .colorFondoTabla {
-    display: flex;
-    flex-direction: column;
-    opacity: 60%;
- }
 
  h6 {
   padding-right: 30%;
@@ -255,7 +365,7 @@ footer {
   border-radius: 10px;
   width: 60px;
   height: 60px;
-  box-shadow: 5px 5px 5px 0.5px rgba(0,0,0,0.53);
+  box-shadow: 5px 5px 0px 0.5px rgba(0,0,0,0.53);
   border: 0.5px #1DA1F2 solid ;
   background: rgba(29,67,80,1);
 background: -moz-linear-gradient(-45deg, rgba(29,67,80,1) 0%, rgba(29,67,80,1) 38%, rgba(24,40,72,1) 75%, rgba(24,40,72,1) 100%);
@@ -281,7 +391,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d4350', end
   border-radius: 10px;
   width: 60px;
   height: 60px;
-  box-shadow: 5px 5px 5px 0.5px rgba(0,0,0,0.53);
+  box-shadow: 5px 5px 0px 0.5px rgba(0,0,0,0.53);
   border: 0.5px #1DA1F2 solid ;
   background: rgba(29,67,80,1);
 background: -moz-linear-gradient(-45deg, rgba(29,67,80,1) 0%, rgba(29,67,80,1) 38%, rgba(24,40,72,1) 75%, rgba(24,40,72,1) 100%);
@@ -306,7 +416,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d4350', end
   border-radius: 10px;
   width: 60px;
   height: 60px;
-  box-shadow: 5px 5px 5px 0.5px rgba(0,0,0,0.53);
+  box-shadow: 5px 5px 0px 0.5px rgba(0,0,0,0.53);
   border: 0.5px #1DA1F2 solid ;
   background: rgba(29,67,80,1);
 background: -moz-linear-gradient(-45deg, rgba(29,67,80,1) 0%, rgba(29,67,80,1) 38%, rgba(24,40,72,1) 75%, rgba(24,40,72,1) 100%);
@@ -331,7 +441,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d4350', end
   border-radius: 10px;
   width: 60px;
   height: 60px;
-  box-shadow: 5px 5px 5px 0.5px rgba(0,0,0,0.53);
+  box-shadow: 5px 5px 0px 0.5px rgba(0,0,0,0.53);
   border: 0.5px #1DA1F2 solid ;
   background: rgba(29,67,80,1);
 background: -moz-linear-gradient(-45deg, rgba(29,67,80,1) 0%, rgba(29,67,80,1) 38%, rgba(24,40,72,1) 75%, rgba(24,40,72,1) 100%);
@@ -356,7 +466,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d4350', end
   border-radius: 10px;
   width: 60px;
   height: 60px;
-  box-shadow: 5px 5px 5px 0.5px rgba(0,0,0,0.53);
+  box-shadow: 5px 5px 0px 0.5px rgba(0,0,0,0.53);
   border: 0.5px #1DA1F2 solid ;
   background: rgba(29,67,80,1);
 background: -moz-linear-gradient(-45deg, rgba(29,67,80,1) 0%, rgba(29,67,80,1) 38%, rgba(24,40,72,1) 75%, rgba(24,40,72,1) 100%);
@@ -380,7 +490,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d4350', end
   border-radius: 10px;
   width: 60px;
   height: 60px;
-  box-shadow: 5px 5px 5px 0.5px rgba(0,0,0,0.53);
+  box-shadow: 5px 5px 0px 0.5px rgba(0,0,0,0.53);
   border: 0.5px #1DA1F2 solid ;
   background: rgba(29,67,80,1);
 background: -moz-linear-gradient(-45deg, rgba(29,67,80,1) 0%, rgba(29,67,80,1) 38%, rgba(24,40,72,1) 75%, rgba(24,40,72,1) 100%);
@@ -419,6 +529,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d4350', end
 
 
 .img-fluid {
-  box-shadow: 0px 6px 5px 5px rgba(0,0,0,0.53);
+  box-shadow: 0px 6px 0px 5px rgba(0,0,0,0.53);
 }
 
