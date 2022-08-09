@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display&family=Orbitron&family=Rock+Salt&family=Rubik+Moonrocks&display=swap');
+
 * {
     margin: 0;
     padding: 0;
 }
 
-$title_font: bold 12px/1.5 'Roboto', sans-serif;
+$title_font: bold 16px 'Permanent Marker', sans-serif;
 
 
 li {
@@ -21,7 +25,7 @@ li {
 .contenedorLoSi {
     display: flex;
     justify-content: flex-end;
-    padding: 2%;
+    padding: 0.5%;
     background: linear-gradient(to bottom, #1D4350, #182848) ;
     
        .login {
@@ -44,9 +48,12 @@ li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 3%;
     padding-left: 17%;
     color: white;
     text-shadow: 0.2em 0.2em 0.2em #252525;
+    font: $title_font;
+    font-size: 16px;
 }
 
 .cajaLogo {
@@ -61,7 +68,9 @@ h1 {
 }
 
 .colorRedes {
-    background-color: #182848;
+    background-color: none;
+    opacity: 100%;
+    
 }
 
 footer {
@@ -162,6 +171,31 @@ footer {
     background: linear-gradient(to bottom, #1D4350, #182848);
   }
 
+  .bordercon {
+    border: 2px transparent solid ;
+    border-image: linear-gradient(to right, #1DA1F2, #C546F7) 1;
+    border-image-repeat: repeat;
+    animation: bordeLogoFrase 3.5s linear infinite;
+  }
+  @keyframes bordeLogoFrase {
+    0% {
+      border-image: linear-gradient(to right, #1DA1F2, #C546F7) 1;
+    }
+    25% {
+      border-image: linear-gradient(to bottom, #1DA1F2, #C546F7) 1;
+    }
+  
+    50% {
+      border-image: linear-gradient(to left, #1DA1F2, #C546F7) 1;
+    }
+    75% {
+      border-image: linear-gradient(to top, #1DA1F2, #C546F7) 1;
+    }
+    100% {
+      border-image: linear-gradient(to right, #1DA1F2, #C546F7) 1;
+    }
+  }
+
   .rowBg-fluid {
     background-image: url(../images/game.jpg);
   }
@@ -203,9 +237,6 @@ footer {
 
 }
 
-footer {
-  font: $title_font;
-}
 
 .redes {
   display: flex;
@@ -213,3 +244,181 @@ footer {
   padding: 20%;
   color: #a8a9b4;
 }
+
+.fa-twitch {
+  padding: 10%;
+  margin: 5%;
+  text-shadow: .025em .025em #ccc;
+  color: #6441a5;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  width: 60px;
+  height: 60px;
+  box-shadow: 5px 5px 5px 0.5px rgba(0,0,0,0.53);
+  border: 0.5px #1DA1F2 solid ;
+  background: rgba(29,67,80,1);
+background: -moz-linear-gradient(-45deg, rgba(29,67,80,1) 0%, rgba(29,67,80,1) 38%, rgba(24,40,72,1) 75%, rgba(24,40,72,1) 100%);
+background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(29,67,80,1)), color-stop(38%, rgba(29,67,80,1)), color-stop(75%, rgba(24,40,72,1)), color-stop(100%, rgba(24,40,72,1)));
+background: -webkit-linear-gradient(-45deg, rgba(29,67,80,1) 0%, rgba(29,67,80,1) 38%, rgba(24,40,72,1) 75%, rgba(24,40,72,1) 100%);
+background: -o-linear-gradient(-45deg, rgba(29,67,80,1) 0%, rgba(29,67,80,1) 38%, rgba(24,40,72,1) 75%, rgba(24,40,72,1) 100%);
+background: -ms-linear-gradient(-45deg, rgba(29,67,80,1) 0%, rgba(29,67,80,1) 38%, rgba(24,40,72,1) 75%, rgba(24,40,72,1) 100%);
+background: linear-gradient(135deg, rgba(29,67,80,1) 0%, rgba(29,67,80,1) 38%, rgba(24,40,72,1) 75%, rgba(24,40,72,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d4350', endColorstr='#182848', GradientType=1 );
+}
+.fa-twitch:hover {
+  text-shadow: 0 0 0px rgba(255,255,255,1) , 0 0 1px rgba(255,255,255,1) , 0 0 1px rgba(255,255,255,1) , 0 0 1px #00ffff , 0 0 2px #00ffff , 0 0 3px #00ffff , 0 0 4px #00ffff ;
+}
+
+
+.fa-youtube {
+  padding: 10%;
+  margin: 5%;
+  text-shadow: .025em .025em #ccc;
+  color: #c4302b;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  width: 60px;
+  height: 60px;
+  box-shadow: 5px 5px 5px 0.5px rgba(0,0,0,0.53);
+  border: 0.5px #1DA1F2 solid ;
+  background: rgba(29,67,80,1);
+background: -moz-linear-gradient(-45deg, rgba(29,67,80,1) 0%, rgba(29,67,80,1) 38%, rgba(24,40,72,1) 75%, rgba(24,40,72,1) 100%);
+background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(29,67,80,1)), color-stop(38%, rgba(29,67,80,1)), color-stop(75%, rgba(24,40,72,1)), color-stop(100%, rgba(24,40,72,1)));
+background: -webkit-linear-gradient(-45deg, rgba(29,67,80,1) 0%, rgba(29,67,80,1) 38%, rgba(24,40,72,1) 75%, rgba(24,40,72,1) 100%);
+background: -o-linear-gradient(-45deg, rgba(29,67,80,1) 0%, rgba(29,67,80,1) 38%, rgba(24,40,72,1) 75%, rgba(24,40,72,1) 100%);
+background: -ms-linear-gradient(-45deg, rgba(29,67,80,1) 0%, rgba(29,67,80,1) 38%, rgba(24,40,72,1) 75%, rgba(24,40,72,1) 100%);
+background: linear-gradient(135deg, rgba(29,67,80,1) 0%, rgba(29,67,80,1) 38%, rgba(24,40,72,1) 75%, rgba(24,40,72,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d4350', endColorstr='#182848', GradientType=1 );
+}
+.fa-youtube:hover {
+  text-shadow: 0 0 0px rgba(255,255,255,1) , 0 0 1px rgba(255,255,255,1) , 0 0 1px rgba(255,255,255,1) , 0 0 1px #00ffff , 0 0 2px #00ffff , 0 0 3px #00ffff , 0 0 4px #00ffff ;
+}
+
+.fa-discord {
+  padding: 10%;
+  margin: 5%;
+  text-shadow: .025em .025em #ccc;
+  color: #7289da;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  width: 60px;
+  height: 60px;
+  box-shadow: 5px 5px 5px 0.5px rgba(0,0,0,0.53);
+  border: 0.5px #1DA1F2 solid ;
+  background: rgba(29,67,80,1);
+background: -moz-linear-gradient(-45deg, rgba(29,67,80,1) 0%, rgba(29,67,80,1) 38%, rgba(24,40,72,1) 75%, rgba(24,40,72,1) 100%);
+background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(29,67,80,1)), color-stop(38%, rgba(29,67,80,1)), color-stop(75%, rgba(24,40,72,1)), color-stop(100%, rgba(24,40,72,1)));
+background: -webkit-linear-gradient(-45deg, rgba(29,67,80,1) 0%, rgba(29,67,80,1) 38%, rgba(24,40,72,1) 75%, rgba(24,40,72,1) 100%);
+background: -o-linear-gradient(-45deg, rgba(29,67,80,1) 0%, rgba(29,67,80,1) 38%, rgba(24,40,72,1) 75%, rgba(24,40,72,1) 100%);
+background: -ms-linear-gradient(-45deg, rgba(29,67,80,1) 0%, rgba(29,67,80,1) 38%, rgba(24,40,72,1) 75%, rgba(24,40,72,1) 100%);
+background: linear-gradient(135deg, rgba(29,67,80,1) 0%, rgba(29,67,80,1) 38%, rgba(24,40,72,1) 75%, rgba(24,40,72,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d4350', endColorstr='#182848', GradientType=1 );
+}
+.fa-discord:hover {
+  text-shadow: 0 0 0px rgba(255,255,255,1) , 0 0 1px rgba(255,255,255,1) , 0 0 1px rgba(255,255,255,1) , 0 0 1px #00ffff , 0 0 2px #00ffff , 0 0 3px #00ffff , 0 0 4px #00ffff ;
+}
+
+.fa-instagram {
+  padding: 10%;
+  margin: 5%;
+  text-shadow: .025em .025em #ccc;
+  color: #8a3ab9;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  width: 60px;
+  height: 60px;
+  box-shadow: 5px 5px 5px 0.5px rgba(0,0,0,0.53);
+  border: 0.5px #1DA1F2 solid ;
+  background: rgba(29,67,80,1);
+background: -moz-linear-gradient(-45deg, rgba(29,67,80,1) 0%, rgba(29,67,80,1) 38%, rgba(24,40,72,1) 75%, rgba(24,40,72,1) 100%);
+background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(29,67,80,1)), color-stop(38%, rgba(29,67,80,1)), color-stop(75%, rgba(24,40,72,1)), color-stop(100%, rgba(24,40,72,1)));
+background: -webkit-linear-gradient(-45deg, rgba(29,67,80,1) 0%, rgba(29,67,80,1) 38%, rgba(24,40,72,1) 75%, rgba(24,40,72,1) 100%);
+background: -o-linear-gradient(-45deg, rgba(29,67,80,1) 0%, rgba(29,67,80,1) 38%, rgba(24,40,72,1) 75%, rgba(24,40,72,1) 100%);
+background: -ms-linear-gradient(-45deg, rgba(29,67,80,1) 0%, rgba(29,67,80,1) 38%, rgba(24,40,72,1) 75%, rgba(24,40,72,1) 100%);
+background: linear-gradient(135deg, rgba(29,67,80,1) 0%, rgba(29,67,80,1) 38%, rgba(24,40,72,1) 75%, rgba(24,40,72,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d4350', endColorstr='#182848', GradientType=1 );
+}
+.fa-instagram:hover {
+  text-shadow: 0 0 0px rgba(255,255,255,1) , 0 0 1px rgba(255,255,255,1) , 0 0 1px rgba(255,255,255,1) , 0 0 1px #00ffff , 0 0 2px #00ffff , 0 0 3px #00ffff , 0 0 4px #00ffff ;
+}
+
+.fa-tiktok {
+  padding: 10%;
+  margin: 5%;
+  text-shadow: .025em .025em #ccc;
+  color: #ff0050;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 10px;
+  width: 60px;
+  height: 60px;
+  box-shadow: 5px 5px 5px 0.5px rgba(0,0,0,0.53);
+  border: 0.5px #1DA1F2 solid ;
+  background: rgba(29,67,80,1);
+background: -moz-linear-gradient(-45deg, rgba(29,67,80,1) 0%, rgba(29,67,80,1) 38%, rgba(24,40,72,1) 75%, rgba(24,40,72,1) 100%);
+background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(29,67,80,1)), color-stop(38%, rgba(29,67,80,1)), color-stop(75%, rgba(24,40,72,1)), color-stop(100%, rgba(24,40,72,1)));
+background: -webkit-linear-gradient(-45deg, rgba(29,67,80,1) 0%, rgba(29,67,80,1) 38%, rgba(24,40,72,1) 75%, rgba(24,40,72,1) 100%);
+background: -o-linear-gradient(-45deg, rgba(29,67,80,1) 0%, rgba(29,67,80,1) 38%, rgba(24,40,72,1) 75%, rgba(24,40,72,1) 100%);
+background: -ms-linear-gradient(-45deg, rgba(29,67,80,1) 0%, rgba(29,67,80,1) 38%, rgba(24,40,72,1) 75%, rgba(24,40,72,1) 100%);
+background: linear-gradient(135deg, rgba(29,67,80,1) 0%, rgba(29,67,80,1) 38%, rgba(24,40,72,1) 75%, rgba(24,40,72,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d4350', endColorstr='#182848', GradientType=1 );
+}
+.fa-tiktok:hover {
+  text-shadow: 0 0 0px rgba(255,255,255,1) , 0 0 1px rgba(255,255,255,1) , 0 0 1px rgba(255,255,255,1) , 0 0 1px #00ffff , 0 0 2px #00ffff , 0 0 3px #00ffff , 0 0 4px #00ffff ;
+}
+.fa-twitter {
+  padding: 10%;
+  margin: 5%;
+  text-shadow: .025em .025em #ccc;
+  color: #1DA1F2;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 10px;
+  width: 60px;
+  height: 60px;
+  box-shadow: 5px 5px 5px 0.5px rgba(0,0,0,0.53);
+  border: 0.5px #1DA1F2 solid ;
+  background: rgba(29,67,80,1);
+background: -moz-linear-gradient(-45deg, rgba(29,67,80,1) 0%, rgba(29,67,80,1) 38%, rgba(24,40,72,1) 75%, rgba(24,40,72,1) 100%);
+background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(29,67,80,1)), color-stop(38%, rgba(29,67,80,1)), color-stop(75%, rgba(24,40,72,1)), color-stop(100%, rgba(24,40,72,1)));
+background: -webkit-linear-gradient(-45deg, rgba(29,67,80,1) 0%, rgba(29,67,80,1) 38%, rgba(24,40,72,1) 75%, rgba(24,40,72,1) 100%);
+background: -o-linear-gradient(-45deg, rgba(29,67,80,1) 0%, rgba(29,67,80,1) 38%, rgba(24,40,72,1) 75%, rgba(24,40,72,1) 100%);
+background: -ms-linear-gradient(-45deg, rgba(29,67,80,1) 0%, rgba(29,67,80,1) 38%, rgba(24,40,72,1) 75%, rgba(24,40,72,1) 100%);
+background: linear-gradient(135deg, rgba(29,67,80,1) 0%, rgba(29,67,80,1) 38%, rgba(24,40,72,1) 75%, rgba(24,40,72,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d4350', endColorstr='#182848', GradientType=1 );
+}
+.fa-twitter:hover {
+  text-shadow: 0 0 0px rgba(255,255,255,1) , 0 0 1px rgba(255,255,255,1) , 0 0 1px rgba(255,255,255,1) , 0 0 1px #00ffff , 0 0 2px #00ffff , 0 0 3px #00ffff , 0 0 4px #00ffff ;
+}
+
+.cajaFraseHeader {
+    font-size: 100px;
+    letter-spacing:-2px;
+    color: #fff;
+    text-shadow: 0 0 0px #fff, 0 0 1px #fff, 0 0 10px #fff, 0 0 15px #ff00de, 0 0 20px #ff00de;
+    -webkit-text-fill-color: #F4ECFF;
+    -webkit-text-stroke-color:#C546F7;
+    -webkit-text-stroke-width:0.2px;
+    animation: encabezado 2.5s linear infinite;
+  }
+  @keyframes encabezado {
+    0% {
+      text-shadow: 0 0 0px #fff, 0 0 1px #fff, 0 0 10px #fff, 0 0 15px #ff00de, 0 0 20px #ff00de;
+    }
+    50% {
+      text-shadow: 0 0 0px #fff, 0 0 1px #fff, 0 0 10px #fff, 0 0 15px #6441a5, 0 0 20px #6441a5;
+    }
+    100% {
+      text-shadow: 0 0 0px #fff, 0 0 1px #fff, 0 0 10px #fff, 0 0 15px #ff00de, 0 0 20px #ff00de;
+    }
+  }
+
+
+.img-fluid {
+  box-shadow: 0px 6px 5px 5px rgba(0,0,0,0.53);
+}
+

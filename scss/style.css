@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display&family=Orbitron&family=Rock+Salt&family=Rubik+Moonrocks&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -17,7 +20,7 @@ li {
 .contenedorLoSi {
   display: flex;
   justify-content: flex-end;
-  padding: 2%;
+  padding: 0.5%;
   background: linear-gradient(to bottom, #1D4350, #182848);
 }
 .contenedorLoSi .login {
@@ -38,9 +41,12 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 3%;
   padding-left: 17%;
   color: white;
   text-shadow: 0.2em 0.2em 0.2em #252525;
+  font: bold 16px "Permanent Marker", sans-serif;
+  font-size: 16px;
 }
 
 .cajaLogo {
@@ -55,7 +61,8 @@ h1 {
 }
 
 .colorRedes {
-  background-color: #182848;
+  background-color: none;
+  opacity: 100%;
 }
 
 footer {
@@ -155,6 +162,55 @@ footer {
   background: linear-gradient(to bottom, #1D4350, #182848);
 }
 
+.bordercon {
+  border: 2px transparent solid;
+  -o-border-image: linear-gradient(to right, #1DA1F2, #C546F7) 1;
+     border-image: linear-gradient(to right, #1DA1F2, #C546F7) 1;
+  border-image-repeat: repeat;
+  -webkit-animation: bordeLogoFrase 3.5s linear infinite;
+          animation: bordeLogoFrase 3.5s linear infinite;
+}
+
+@-webkit-keyframes bordeLogoFrase {
+  0% {
+    border-image: linear-gradient(to right, #1DA1F2, #C546F7) 1;
+  }
+  25% {
+    border-image: linear-gradient(to bottom, #1DA1F2, #C546F7) 1;
+  }
+  50% {
+    border-image: linear-gradient(to left, #1DA1F2, #C546F7) 1;
+  }
+  75% {
+    border-image: linear-gradient(to top, #1DA1F2, #C546F7) 1;
+  }
+  100% {
+    border-image: linear-gradient(to right, #1DA1F2, #C546F7) 1;
+  }
+}
+
+@keyframes bordeLogoFrase {
+  0% {
+    -o-border-image: linear-gradient(to right, #1DA1F2, #C546F7) 1;
+       border-image: linear-gradient(to right, #1DA1F2, #C546F7) 1;
+  }
+  25% {
+    -o-border-image: linear-gradient(to bottom, #1DA1F2, #C546F7) 1;
+       border-image: linear-gradient(to bottom, #1DA1F2, #C546F7) 1;
+  }
+  50% {
+    -o-border-image: linear-gradient(to left, #1DA1F2, #C546F7) 1;
+       border-image: linear-gradient(to left, #1DA1F2, #C546F7) 1;
+  }
+  75% {
+    -o-border-image: linear-gradient(to top, #1DA1F2, #C546F7) 1;
+       border-image: linear-gradient(to top, #1DA1F2, #C546F7) 1;
+  }
+  100% {
+    -o-border-image: linear-gradient(to right, #1DA1F2, #C546F7) 1;
+       border-image: linear-gradient(to right, #1DA1F2, #C546F7) 1;
+  }
+}
 .rowBg-fluid {
   background-image: url(../images/game.jpg);
 }
@@ -194,13 +250,168 @@ h6 {
   color: #a8a9b4;
 }
 
-footer {
-  font: bold 12px/1.5 "Roboto", sans-serif;
-}
-
 .redes {
   display: flex;
   flex-direction: column;
   padding: 20%;
   color: #a8a9b4;
+}
+
+.fa-twitch {
+  padding: 10%;
+  margin: 5%;
+  text-shadow: 0.025em 0.025em #ccc;
+  color: #6441a5;
+  border-radius: 10px;
+  width: 60px;
+  height: 60px;
+  box-shadow: 5px 5px 5px 0.5px rgba(0, 0, 0, 0.53);
+  border: 0.5px #1DA1F2 solid;
+  background: rgb(29, 67, 80);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgb(29, 67, 80)), color-stop(38%, rgb(29, 67, 80)), color-stop(75%, rgb(24, 40, 72)), color-stop(100%, rgb(24, 40, 72)));
+  background: linear-gradient(135deg, rgb(29, 67, 80) 0%, rgb(29, 67, 80) 38%, rgb(24, 40, 72) 75%, rgb(24, 40, 72) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#1d4350", endColorstr="#182848", GradientType=1 );
+}
+
+.fa-twitch:hover {
+  text-shadow: 0 0 0px rgb(255, 255, 255), 0 0 1px rgb(255, 255, 255), 0 0 1px rgb(255, 255, 255), 0 0 1px #00ffff, 0 0 2px #00ffff, 0 0 3px #00ffff, 0 0 4px #00ffff;
+}
+
+.fa-youtube {
+  padding: 10%;
+  margin: 5%;
+  text-shadow: 0.025em 0.025em #ccc;
+  color: #c4302b;
+  border-radius: 10px;
+  width: 60px;
+  height: 60px;
+  box-shadow: 5px 5px 5px 0.5px rgba(0, 0, 0, 0.53);
+  border: 0.5px #1DA1F2 solid;
+  background: rgb(29, 67, 80);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgb(29, 67, 80)), color-stop(38%, rgb(29, 67, 80)), color-stop(75%, rgb(24, 40, 72)), color-stop(100%, rgb(24, 40, 72)));
+  background: linear-gradient(135deg, rgb(29, 67, 80) 0%, rgb(29, 67, 80) 38%, rgb(24, 40, 72) 75%, rgb(24, 40, 72) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#1d4350", endColorstr="#182848", GradientType=1 );
+}
+
+.fa-youtube:hover {
+  text-shadow: 0 0 0px rgb(255, 255, 255), 0 0 1px rgb(255, 255, 255), 0 0 1px rgb(255, 255, 255), 0 0 1px #00ffff, 0 0 2px #00ffff, 0 0 3px #00ffff, 0 0 4px #00ffff;
+}
+
+.fa-discord {
+  padding: 10%;
+  margin: 5%;
+  text-shadow: 0.025em 0.025em #ccc;
+  color: #7289da;
+  border-radius: 10px;
+  width: 60px;
+  height: 60px;
+  box-shadow: 5px 5px 5px 0.5px rgba(0, 0, 0, 0.53);
+  border: 0.5px #1DA1F2 solid;
+  background: rgb(29, 67, 80);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgb(29, 67, 80)), color-stop(38%, rgb(29, 67, 80)), color-stop(75%, rgb(24, 40, 72)), color-stop(100%, rgb(24, 40, 72)));
+  background: linear-gradient(135deg, rgb(29, 67, 80) 0%, rgb(29, 67, 80) 38%, rgb(24, 40, 72) 75%, rgb(24, 40, 72) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#1d4350", endColorstr="#182848", GradientType=1 );
+}
+
+.fa-discord:hover {
+  text-shadow: 0 0 0px rgb(255, 255, 255), 0 0 1px rgb(255, 255, 255), 0 0 1px rgb(255, 255, 255), 0 0 1px #00ffff, 0 0 2px #00ffff, 0 0 3px #00ffff, 0 0 4px #00ffff;
+}
+
+.fa-instagram {
+  padding: 10%;
+  margin: 5%;
+  text-shadow: 0.025em 0.025em #ccc;
+  color: #8a3ab9;
+  border-radius: 10px;
+  width: 60px;
+  height: 60px;
+  box-shadow: 5px 5px 5px 0.5px rgba(0, 0, 0, 0.53);
+  border: 0.5px #1DA1F2 solid;
+  background: rgb(29, 67, 80);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgb(29, 67, 80)), color-stop(38%, rgb(29, 67, 80)), color-stop(75%, rgb(24, 40, 72)), color-stop(100%, rgb(24, 40, 72)));
+  background: linear-gradient(135deg, rgb(29, 67, 80) 0%, rgb(29, 67, 80) 38%, rgb(24, 40, 72) 75%, rgb(24, 40, 72) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#1d4350", endColorstr="#182848", GradientType=1 );
+}
+
+.fa-instagram:hover {
+  text-shadow: 0 0 0px rgb(255, 255, 255), 0 0 1px rgb(255, 255, 255), 0 0 1px rgb(255, 255, 255), 0 0 1px #00ffff, 0 0 2px #00ffff, 0 0 3px #00ffff, 0 0 4px #00ffff;
+}
+
+.fa-tiktok {
+  padding: 10%;
+  margin: 5%;
+  text-shadow: 0.025em 0.025em #ccc;
+  color: #ff0050;
+  border-radius: 10px;
+  width: 60px;
+  height: 60px;
+  box-shadow: 5px 5px 5px 0.5px rgba(0, 0, 0, 0.53);
+  border: 0.5px #1DA1F2 solid;
+  background: rgb(29, 67, 80);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgb(29, 67, 80)), color-stop(38%, rgb(29, 67, 80)), color-stop(75%, rgb(24, 40, 72)), color-stop(100%, rgb(24, 40, 72)));
+  background: linear-gradient(135deg, rgb(29, 67, 80) 0%, rgb(29, 67, 80) 38%, rgb(24, 40, 72) 75%, rgb(24, 40, 72) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#1d4350", endColorstr="#182848", GradientType=1 );
+}
+
+.fa-tiktok:hover {
+  text-shadow: 0 0 0px rgb(255, 255, 255), 0 0 1px rgb(255, 255, 255), 0 0 1px rgb(255, 255, 255), 0 0 1px #00ffff, 0 0 2px #00ffff, 0 0 3px #00ffff, 0 0 4px #00ffff;
+}
+
+.fa-twitter {
+  padding: 10%;
+  margin: 5%;
+  text-shadow: 0.025em 0.025em #ccc;
+  color: #1DA1F2;
+  border-radius: 10px;
+  width: 60px;
+  height: 60px;
+  box-shadow: 5px 5px 5px 0.5px rgba(0, 0, 0, 0.53);
+  border: 0.5px #1DA1F2 solid;
+  background: rgb(29, 67, 80);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgb(29, 67, 80)), color-stop(38%, rgb(29, 67, 80)), color-stop(75%, rgb(24, 40, 72)), color-stop(100%, rgb(24, 40, 72)));
+  background: linear-gradient(135deg, rgb(29, 67, 80) 0%, rgb(29, 67, 80) 38%, rgb(24, 40, 72) 75%, rgb(24, 40, 72) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#1d4350", endColorstr="#182848", GradientType=1 );
+}
+
+.fa-twitter:hover {
+  text-shadow: 0 0 0px rgb(255, 255, 255), 0 0 1px rgb(255, 255, 255), 0 0 1px rgb(255, 255, 255), 0 0 1px #00ffff, 0 0 2px #00ffff, 0 0 3px #00ffff, 0 0 4px #00ffff;
+}
+
+.cajaFraseHeader {
+  font-size: 100px;
+  letter-spacing: -2px;
+  color: #fff;
+  text-shadow: 0 0 0px #fff, 0 0 1px #fff, 0 0 10px #fff, 0 0 15px #ff00de, 0 0 20px #ff00de;
+  -webkit-text-fill-color: #F4ECFF;
+  -webkit-text-stroke-color: #C546F7;
+  -webkit-text-stroke-width: 0.2px;
+  -webkit-animation: encabezado 2.5s linear infinite;
+          animation: encabezado 2.5s linear infinite;
+}
+
+@-webkit-keyframes encabezado {
+  0% {
+    text-shadow: 0 0 0px #fff, 0 0 1px #fff, 0 0 10px #fff, 0 0 15px #ff00de, 0 0 20px #ff00de;
+  }
+  50% {
+    text-shadow: 0 0 0px #fff, 0 0 1px #fff, 0 0 10px #fff, 0 0 15px #6441a5, 0 0 20px #6441a5;
+  }
+  100% {
+    text-shadow: 0 0 0px #fff, 0 0 1px #fff, 0 0 10px #fff, 0 0 15px #ff00de, 0 0 20px #ff00de;
+  }
+}
+
+@keyframes encabezado {
+  0% {
+    text-shadow: 0 0 0px #fff, 0 0 1px #fff, 0 0 10px #fff, 0 0 15px #ff00de, 0 0 20px #ff00de;
+  }
+  50% {
+    text-shadow: 0 0 0px #fff, 0 0 1px #fff, 0 0 10px #fff, 0 0 15px #6441a5, 0 0 20px #6441a5;
+  }
+  100% {
+    text-shadow: 0 0 0px #fff, 0 0 1px #fff, 0 0 10px #fff, 0 0 15px #ff00de, 0 0 20px #ff00de;
+  }
+}
+.img-fluid {
+  box-shadow: 0px 6px 5px 5px rgba(0, 0, 0, 0.53);
 }/*# sourceMappingURL=style.css.map */
