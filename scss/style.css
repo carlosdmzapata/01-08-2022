@@ -61,7 +61,6 @@ h1 {
 
 .colorRedes {
   background-color: none;
-  opacity: 100%;
 }
 
 footer {
@@ -183,16 +182,53 @@ footer {
 }
 
 .menu {
-  opacity: 100%;
+  font-family: "Orbitron";
   color: white;
-  z-index: 9999;
-  padding-right: 10%;
-  font-size: medium;
+  font-size: 15px;
+  padding-right: 31%;
+}
+
+.redes {
+  font-size: 12px light;
+  font-family: "Orbitron";
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20%;
+}
+
+.login {
+  font-family: "Orbitron";
+  font-size: 11px;
+}
+
+.signUp {
+  font-family: "Orbitron";
+  font-size: 11px;
+}
+
+footer {
+  padding-right: 30%;
+  font-size: 10px;
+  font-family: "Orbitron";
+  color: white;
 }
 
 .navbar-toggler {
   border: #1DA1F2 1px solid;
   transform-style: none;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 10px;
+}
+
+span {
+  font-size: 12px;
 }
 
 .l1 {
@@ -204,6 +240,7 @@ footer {
   border-radius: 10px;
   box-shadow: inset 0px 0px 40px black;
   transition: all 0.1s;
+  font-family: "Orbitron";
 }
 
 .l1:hover {
@@ -219,6 +256,7 @@ footer {
   border-radius: 10px;
   box-shadow: inset 0px 0px 40px black;
   transition: all 0.1s;
+  font-family: "Orbitron";
 }
 
 .l2:hover {
@@ -234,6 +272,7 @@ footer {
   border-radius: 10px;
   box-shadow: inset 0px 0px 40px black;
   transition: all 0.1s;
+  font-family: "Orbitron";
 }
 
 .l3:hover {
@@ -249,6 +288,7 @@ footer {
   border-radius: 10px;
   box-shadow: inset 0px 0px 40px black;
   transition: all 0.1s;
+  font-family: "Orbitron";
 }
 
 .l4:hover {
@@ -264,6 +304,7 @@ footer {
   border-radius: 10px;
   box-shadow: inset 0px 0px 40px black;
   transition: all 0.1s;
+  font-family: "Orbitron";
 }
 
 .l5:hover {
@@ -279,6 +320,7 @@ footer {
   border-radius: 10px;
   box-shadow: inset 0px 0px 40px black;
   transition: all 0.1s;
+  font-family: "Orbitron";
 }
 
 .l6:hover {
@@ -344,10 +386,6 @@ footer {
   background-image: url(../images/game.jpg);
 }
 
-h6 {
-  padding-right: 30%;
-}
-
 .texto {
   color: #fff;
   padding: 10%;
@@ -375,14 +413,7 @@ h6 {
   color: #a8a9b4;
 }
 
-.redes {
-  display: flex;
-  flex-direction: column;
-  padding: 20%;
-  color: #a8a9b4;
-}
-
-.fa-twitch {
+.fa-twitch, .fa-twitter, .fa-tiktok, .fa-instagram, .fa-discord, .fa-youtube {
   padding: 10%;
   margin: 5%;
   text-shadow: 0.025em 0.025em #ccc;
@@ -398,24 +429,12 @@ h6 {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#1d4350", endColorstr="#182848", GradientType=1 );
 }
 
-.fa-twitch:hover {
+.fa-twitch:hover, .fa-twitter:hover, .fa-tiktok:hover, .fa-instagram:hover, .fa-discord:hover, .fa-youtube:hover {
   text-shadow: 0 0 0px rgb(255, 255, 255), 0 0 1px rgb(255, 255, 255), 0 0 1px rgb(255, 255, 255), 0 0 1px #00ffff, 0 0 2px #00ffff, 0 0 3px #00ffff, 0 0 4px #00ffff;
 }
 
 .fa-youtube {
-  padding: 10%;
-  margin: 5%;
-  text-shadow: 0.025em 0.025em #ccc;
   color: #c4302b;
-  border-radius: 10px;
-  width: 60px;
-  height: 60px;
-  box-shadow: 5px 5px 0px 0.5px rgba(0, 0, 0, 0.53);
-  border: 0.5px #1DA1F2 solid;
-  background: rgb(29, 67, 80);
-  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgb(29, 67, 80)), color-stop(38%, rgb(29, 67, 80)), color-stop(75%, rgb(24, 40, 72)), color-stop(100%, rgb(24, 40, 72)));
-  background: linear-gradient(135deg, rgb(29, 67, 80) 0%, rgb(29, 67, 80) 38%, rgb(24, 40, 72) 75%, rgb(24, 40, 72) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#1d4350", endColorstr="#182848", GradientType=1 );
 }
 
 .fa-youtube:hover {
@@ -423,19 +442,7 @@ h6 {
 }
 
 .fa-discord {
-  padding: 10%;
-  margin: 5%;
-  text-shadow: 0.025em 0.025em #ccc;
   color: #7289da;
-  border-radius: 10px;
-  width: 60px;
-  height: 60px;
-  box-shadow: 5px 5px 0px 0.5px rgba(0, 0, 0, 0.53);
-  border: 0.5px #1DA1F2 solid;
-  background: rgb(29, 67, 80);
-  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgb(29, 67, 80)), color-stop(38%, rgb(29, 67, 80)), color-stop(75%, rgb(24, 40, 72)), color-stop(100%, rgb(24, 40, 72)));
-  background: linear-gradient(135deg, rgb(29, 67, 80) 0%, rgb(29, 67, 80) 38%, rgb(24, 40, 72) 75%, rgb(24, 40, 72) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#1d4350", endColorstr="#182848", GradientType=1 );
 }
 
 .fa-discord:hover {
@@ -443,19 +450,7 @@ h6 {
 }
 
 .fa-instagram {
-  padding: 10%;
-  margin: 5%;
-  text-shadow: 0.025em 0.025em #ccc;
   color: #8a3ab9;
-  border-radius: 10px;
-  width: 60px;
-  height: 60px;
-  box-shadow: 5px 5px 0px 0.5px rgba(0, 0, 0, 0.53);
-  border: 0.5px #1DA1F2 solid;
-  background: rgb(29, 67, 80);
-  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgb(29, 67, 80)), color-stop(38%, rgb(29, 67, 80)), color-stop(75%, rgb(24, 40, 72)), color-stop(100%, rgb(24, 40, 72)));
-  background: linear-gradient(135deg, rgb(29, 67, 80) 0%, rgb(29, 67, 80) 38%, rgb(24, 40, 72) 75%, rgb(24, 40, 72) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#1d4350", endColorstr="#182848", GradientType=1 );
 }
 
 .fa-instagram:hover {
@@ -463,43 +458,19 @@ h6 {
 }
 
 .fa-tiktok {
-  padding: 10%;
-  margin: 5%;
-  text-shadow: 0.025em 0.025em #ccc;
   color: #ff0050;
-  border-radius: 10px;
-  width: 60px;
-  height: 60px;
-  box-shadow: 5px 5px 0px 0.5px rgba(0, 0, 0, 0.53);
-  border: 0.5px #1DA1F2 solid;
-  background: rgb(29, 67, 80);
-  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgb(29, 67, 80)), color-stop(38%, rgb(29, 67, 80)), color-stop(75%, rgb(24, 40, 72)), color-stop(100%, rgb(24, 40, 72)));
-  background: linear-gradient(135deg, rgb(29, 67, 80) 0%, rgb(29, 67, 80) 38%, rgb(24, 40, 72) 75%, rgb(24, 40, 72) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#1d4350", endColorstr="#182848", GradientType=1 );
 }
 
 .fa-tiktok:hover {
   text-shadow: 0 0 0px rgb(255, 255, 255), 0 0 1px rgb(255, 255, 255), 0 0 1px rgb(255, 255, 255), 0 0 1px #00ffff, 0 0 2px #00ffff, 0 0 3px #00ffff, 0 0 4px #00ffff;
 }
 
-.fa-twitter {
-  padding: 10%;
-  margin: 5%;
-  text-shadow: 0.025em 0.025em #ccc;
-  color: #1DA1F2;
-  border-radius: 10px;
-  width: 60px;
-  height: 60px;
-  box-shadow: 5px 5px 0px 0.5px rgba(0, 0, 0, 0.53);
-  border: 0.5px #1DA1F2 solid;
-  background: rgb(29, 67, 80);
-  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgb(29, 67, 80)), color-stop(38%, rgb(29, 67, 80)), color-stop(75%, rgb(24, 40, 72)), color-stop(100%, rgb(24, 40, 72)));
-  background: linear-gradient(135deg, rgb(29, 67, 80) 0%, rgb(29, 67, 80) 38%, rgb(24, 40, 72) 75%, rgb(24, 40, 72) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#1d4350", endColorstr="#182848", GradientType=1 );
-}
-
 .fa-twitter:hover {
   text-shadow: 0 0 0px rgb(255, 255, 255), 0 0 1px rgb(255, 255, 255), 0 0 1px rgb(255, 255, 255), 0 0 1px #00ffff, 0 0 2px #00ffff, 0 0 3px #00ffff, 0 0 4px #00ffff;
+}
+
+.fa-twitter {
+  color: #1DA1F2;
 }
 
 .glitch {
@@ -672,6 +643,10 @@ h6 {
     transition-delay: 0s !important;
   }
 }
+.img-fluid {
+  box-shadow: 0px 6px 0px 5px rgba(0, 0, 0, 0.53);
+}
+
 /*
 .cajaFraseHeader {
     font-size: 100px;
@@ -694,7 +669,4 @@ h6 {
       text-shadow: 0 0 0px #fff, 0 0 1px #fff, 0 0 10px #fff, 0 0 15px #ff00de, 0 0 20px #ff00de;
     }
   }
-*/
-.img-fluid {
-  box-shadow: 0px 6px 0px 5px rgba(0, 0, 0, 0.53);
-}/*# sourceMappingURL=style.css.map */
+*//*# sourceMappingURL=style.css.map */

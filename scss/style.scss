@@ -69,8 +69,6 @@ h1 {
 
 .colorRedes {
     background-color: none;
-    opacity: 100%;
-    
 }
 
 footer {
@@ -192,12 +190,38 @@ footer {
     border-radius: 10px; 
   }
 
+  $map: (
+    subtitulos: 'Orbitron',
+    color: white
+  );
+
   .menu {
-    opacity: 100%;
-    color: white;
-    z-index: 9999;
-    padding-right: 10%;
-    font-size:medium;
+  font-family: map-get($map, subtitulos);
+  color: map-get($map, color);
+  font-size: 15px;
+  padding-right: 31%;
+  }
+  .redes {
+    font-size: 12px light;
+    font-family: map-get($map, subtitulos);
+    color: map-get($map, color);
+    display: flex;
+    flex-direction: column;
+    padding: 20%;
+    }
+  .login {
+    font-family: map-get($map, subtitulos);
+    font-size: 11px;
+  }
+  .signUp {
+    font-family: map-get($map, subtitulos);
+    font-size: 11px;
+  }
+  footer {
+    padding-right: 30%;
+    font-size: 10px;
+    font-family: map-get($map, subtitulos);
+    color: map-get($map, color);
   }
 
   .navbar-toggler {
@@ -206,8 +230,7 @@ footer {
   }
   
 
-
-  .l1 {
+  @mixin estiloBotones {
     display: flex;
     width: 140px;
     justify-content: center;
@@ -216,71 +239,52 @@ footer {
     border-radius: 10px;
     box-shadow: inset 0px 0px 40px black;
     transition: all 0.1s; 
+    font-family: map-get($map, subtitulos);
+}
+
+h3 {
+  font-size: 18px;
+}
+h4 {
+  font-size: 10px;
+}
+span {
+  font-size: 12px;
+}
+
+  .l1 {
+    @include estiloBotones();
   }
+  
   .l1:hover {
     box-shadow: inset 0px 0px 0px black,
   }
   .l2 {
-    display: flex;
-    width: 140px;
-    justify-content: center;
-    background: linear-gradient(to top, #1D4350, #182848);
-    border: #1DA1F2 1px solid;
-    border-radius: 10px;
-    box-shadow: inset 0px 0px 40px black; 
-    transition: all 0.1s; 
+    @include estiloBotones();
   }
   .l2:hover {
     box-shadow: inset 0px 0px 0px black,
   }
   .l3 {
-    display: flex;
-    width: 140px;
-    justify-content: center;
-    background: linear-gradient(to top, #1D4350, #182848);
-    border: #1DA1F2 1px solid;
-    border-radius: 10px;
-    box-shadow: inset 0px 0px 40px black; 
-    transition: all 0.1s; 
+    @include estiloBotones(); 
   }
   .l3:hover {
     box-shadow: inset 0px 0px 0px black,
   }
   .l4 {
-    display: flex;
-    width: 140px;
-    justify-content: center;
-    background: linear-gradient(to top, #1D4350, #182848);
-    border: #1DA1F2 1px solid;
-    border-radius: 10px;
-    box-shadow: inset 0px 0px 40px black; 
-    transition: all 0.1s; 
+    @include estiloBotones();
   }
   .l4:hover {
     box-shadow: inset 0px 0px 0px black,
   }
   .l5 {
-    display: flex;
-    width: 140px;
-    justify-content: center;
-    background: linear-gradient(to top, #1D4350, #182848);
-    border: #1DA1F2 1px solid;
-    border-radius: 10px;
-    box-shadow: inset 0px 0px 40px black; 
-    transition: all 0.1s; 
+    @include estiloBotones();
   }
   .l5:hover {
     box-shadow: inset 0px 0px 0px black,
   }
   .l6 {
-    display: flex;
-    width: 140px;
-    justify-content: center;
-    background: linear-gradient(to top, #1D4350, #182848);
-    border: #1DA1F2 1px solid;
-    border-radius: 10px;
-    box-shadow: inset 0px 0px 40px black; 
-    transition: all 0.1s; 
+    @include estiloBotones();
   }
   .l6:hover {
     box-shadow: inset 0px 0px 0px black;
@@ -321,10 +325,6 @@ footer {
   }
 
 
- h6 {
-  padding-right: 30%;
- }
-
  .texto {
   color: #fff;
   padding: 10%;
@@ -355,12 +355,7 @@ footer {
 }
 
 
-.redes {
-  display: flex;
-  flex-direction: column;
-  padding: 20%;
-  color: #a8a9b4;
-}
+
 
 .fa-twitch {
   padding: 10%;
@@ -387,130 +382,53 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d4350', end
   text-shadow: 0 0 0px rgba(255,255,255,1) , 0 0 1px rgba(255,255,255,1) , 0 0 1px rgba(255,255,255,1) , 0 0 1px #00ffff , 0 0 2px #00ffff , 0 0 3px #00ffff , 0 0 4px #00ffff ;
 }
 
-
 .fa-youtube {
-  padding: 10%;
-  margin: 5%;
-  text-shadow: .025em .025em #ccc;
+  @extend .fa-twitch;
   color: #c4302b;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-  width: 60px;
-  height: 60px;
-  box-shadow: 5px 5px 0px 0.5px rgba(0,0,0,0.53);
-  border: 0.5px #1DA1F2 solid ;
-  background: rgba(29,67,80,1);
-background: -moz-linear-gradient(-45deg, rgba(29,67,80,1) 0%, rgba(29,67,80,1) 38%, rgba(24,40,72,1) 75%, rgba(24,40,72,1) 100%);
-background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(29,67,80,1)), color-stop(38%, rgba(29,67,80,1)), color-stop(75%, rgba(24,40,72,1)), color-stop(100%, rgba(24,40,72,1)));
-background: -webkit-linear-gradient(-45deg, rgba(29,67,80,1) 0%, rgba(29,67,80,1) 38%, rgba(24,40,72,1) 75%, rgba(24,40,72,1) 100%);
-background: -o-linear-gradient(-45deg, rgba(29,67,80,1) 0%, rgba(29,67,80,1) 38%, rgba(24,40,72,1) 75%, rgba(24,40,72,1) 100%);
-background: -ms-linear-gradient(-45deg, rgba(29,67,80,1) 0%, rgba(29,67,80,1) 38%, rgba(24,40,72,1) 75%, rgba(24,40,72,1) 100%);
-background: linear-gradient(135deg, rgba(29,67,80,1) 0%, rgba(29,67,80,1) 38%, rgba(24,40,72,1) 75%, rgba(24,40,72,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d4350', endColorstr='#182848', GradientType=1 );
 }
-.fa-youtube:hover {
+.fa-youtube:hover{
   text-shadow: 0 0 0px rgba(255,255,255,1) , 0 0 1px rgba(255,255,255,1) , 0 0 1px rgba(255,255,255,1) , 0 0 1px #00ffff , 0 0 2px #00ffff , 0 0 3px #00ffff , 0 0 4px #00ffff ;
 }
 
 .fa-discord {
-  padding: 10%;
-  margin: 5%;
-  text-shadow: .025em .025em #ccc;
+  @extend .fa-twitch;
   color: #7289da;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-  width: 60px;
-  height: 60px;
-  box-shadow: 5px 5px 0px 0.5px rgba(0,0,0,0.53);
-  border: 0.5px #1DA1F2 solid ;
-  background: rgba(29,67,80,1);
-background: -moz-linear-gradient(-45deg, rgba(29,67,80,1) 0%, rgba(29,67,80,1) 38%, rgba(24,40,72,1) 75%, rgba(24,40,72,1) 100%);
-background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(29,67,80,1)), color-stop(38%, rgba(29,67,80,1)), color-stop(75%, rgba(24,40,72,1)), color-stop(100%, rgba(24,40,72,1)));
-background: -webkit-linear-gradient(-45deg, rgba(29,67,80,1) 0%, rgba(29,67,80,1) 38%, rgba(24,40,72,1) 75%, rgba(24,40,72,1) 100%);
-background: -o-linear-gradient(-45deg, rgba(29,67,80,1) 0%, rgba(29,67,80,1) 38%, rgba(24,40,72,1) 75%, rgba(24,40,72,1) 100%);
-background: -ms-linear-gradient(-45deg, rgba(29,67,80,1) 0%, rgba(29,67,80,1) 38%, rgba(24,40,72,1) 75%, rgba(24,40,72,1) 100%);
-background: linear-gradient(135deg, rgba(29,67,80,1) 0%, rgba(29,67,80,1) 38%, rgba(24,40,72,1) 75%, rgba(24,40,72,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d4350', endColorstr='#182848', GradientType=1 );
 }
-.fa-discord:hover {
+.fa-discord:hover{
   text-shadow: 0 0 0px rgba(255,255,255,1) , 0 0 1px rgba(255,255,255,1) , 0 0 1px rgba(255,255,255,1) , 0 0 1px #00ffff , 0 0 2px #00ffff , 0 0 3px #00ffff , 0 0 4px #00ffff ;
 }
 
 .fa-instagram {
-  padding: 10%;
-  margin: 5%;
-  text-shadow: .025em .025em #ccc;
+  @extend .fa-twitch;
   color: #8a3ab9;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-  width: 60px;
-  height: 60px;
-  box-shadow: 5px 5px 0px 0.5px rgba(0,0,0,0.53);
-  border: 0.5px #1DA1F2 solid ;
-  background: rgba(29,67,80,1);
-background: -moz-linear-gradient(-45deg, rgba(29,67,80,1) 0%, rgba(29,67,80,1) 38%, rgba(24,40,72,1) 75%, rgba(24,40,72,1) 100%);
-background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(29,67,80,1)), color-stop(38%, rgba(29,67,80,1)), color-stop(75%, rgba(24,40,72,1)), color-stop(100%, rgba(24,40,72,1)));
-background: -webkit-linear-gradient(-45deg, rgba(29,67,80,1) 0%, rgba(29,67,80,1) 38%, rgba(24,40,72,1) 75%, rgba(24,40,72,1) 100%);
-background: -o-linear-gradient(-45deg, rgba(29,67,80,1) 0%, rgba(29,67,80,1) 38%, rgba(24,40,72,1) 75%, rgba(24,40,72,1) 100%);
-background: -ms-linear-gradient(-45deg, rgba(29,67,80,1) 0%, rgba(29,67,80,1) 38%, rgba(24,40,72,1) 75%, rgba(24,40,72,1) 100%);
-background: linear-gradient(135deg, rgba(29,67,80,1) 0%, rgba(29,67,80,1) 38%, rgba(24,40,72,1) 75%, rgba(24,40,72,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d4350', endColorstr='#182848', GradientType=1 );
 }
-.fa-instagram:hover {
+.fa-instagram:hover{
   text-shadow: 0 0 0px rgba(255,255,255,1) , 0 0 1px rgba(255,255,255,1) , 0 0 1px rgba(255,255,255,1) , 0 0 1px #00ffff , 0 0 2px #00ffff , 0 0 3px #00ffff , 0 0 4px #00ffff ;
 }
 
 .fa-tiktok {
-  padding: 10%;
-  margin: 5%;
-  text-shadow: .025em .025em #ccc;
+  @extend .fa-twitch;
   color: #ff0050;
-  -moz-border-radius: 100%;
-  -webkit-border-radius: 100%;
-  border-radius: 10px;
-  width: 60px;
-  height: 60px;
-  box-shadow: 5px 5px 0px 0.5px rgba(0,0,0,0.53);
-  border: 0.5px #1DA1F2 solid ;
-  background: rgba(29,67,80,1);
-background: -moz-linear-gradient(-45deg, rgba(29,67,80,1) 0%, rgba(29,67,80,1) 38%, rgba(24,40,72,1) 75%, rgba(24,40,72,1) 100%);
-background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(29,67,80,1)), color-stop(38%, rgba(29,67,80,1)), color-stop(75%, rgba(24,40,72,1)), color-stop(100%, rgba(24,40,72,1)));
-background: -webkit-linear-gradient(-45deg, rgba(29,67,80,1) 0%, rgba(29,67,80,1) 38%, rgba(24,40,72,1) 75%, rgba(24,40,72,1) 100%);
-background: -o-linear-gradient(-45deg, rgba(29,67,80,1) 0%, rgba(29,67,80,1) 38%, rgba(24,40,72,1) 75%, rgba(24,40,72,1) 100%);
-background: -ms-linear-gradient(-45deg, rgba(29,67,80,1) 0%, rgba(29,67,80,1) 38%, rgba(24,40,72,1) 75%, rgba(24,40,72,1) 100%);
-background: linear-gradient(135deg, rgba(29,67,80,1) 0%, rgba(29,67,80,1) 38%, rgba(24,40,72,1) 75%, rgba(24,40,72,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d4350', endColorstr='#182848', GradientType=1 );
 }
-.fa-tiktok:hover {
+.fa-tiktok:hover{
   text-shadow: 0 0 0px rgba(255,255,255,1) , 0 0 1px rgba(255,255,255,1) , 0 0 1px rgba(255,255,255,1) , 0 0 1px #00ffff , 0 0 2px #00ffff , 0 0 3px #00ffff , 0 0 4px #00ffff ;
 }
+
 .fa-twitter {
-  padding: 10%;
-  margin: 5%;
-  text-shadow: .025em .025em #ccc;
-  color: #1DA1F2;
-  -moz-border-radius: 100%;
-  -webkit-border-radius: 100%;
-  border-radius: 10px;
-  width: 60px;
-  height: 60px;
-  box-shadow: 5px 5px 0px 0.5px rgba(0,0,0,0.53);
-  border: 0.5px #1DA1F2 solid ;
-  background: rgba(29,67,80,1);
-background: -moz-linear-gradient(-45deg, rgba(29,67,80,1) 0%, rgba(29,67,80,1) 38%, rgba(24,40,72,1) 75%, rgba(24,40,72,1) 100%);
-background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(29,67,80,1)), color-stop(38%, rgba(29,67,80,1)), color-stop(75%, rgba(24,40,72,1)), color-stop(100%, rgba(24,40,72,1)));
-background: -webkit-linear-gradient(-45deg, rgba(29,67,80,1) 0%, rgba(29,67,80,1) 38%, rgba(24,40,72,1) 75%, rgba(24,40,72,1) 100%);
-background: -o-linear-gradient(-45deg, rgba(29,67,80,1) 0%, rgba(29,67,80,1) 38%, rgba(24,40,72,1) 75%, rgba(24,40,72,1) 100%);
-background: -ms-linear-gradient(-45deg, rgba(29,67,80,1) 0%, rgba(29,67,80,1) 38%, rgba(24,40,72,1) 75%, rgba(24,40,72,1) 100%);
-background: linear-gradient(135deg, rgba(29,67,80,1) 0%, rgba(29,67,80,1) 38%, rgba(24,40,72,1) 75%, rgba(24,40,72,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d4350', endColorstr='#182848', GradientType=1 );
+  @extend .fa-twitch;
 }
-.fa-twitter:hover {
+.fa-twitter:hover{
   text-shadow: 0 0 0px rgba(255,255,255,1) , 0 0 1px rgba(255,255,255,1) , 0 0 1px rgba(255,255,255,1) , 0 0 1px #00ffff , 0 0 2px #00ffff , 0 0 3px #00ffff , 0 0 4px #00ffff ;
 }
+
+$map: (
+    twitter: #1DA1F2,
+);
+
+.fa-twitter {
+  color: map-get($map, twitter);
+}
+
 
 .glitch {
   font-size: 100px;
@@ -649,6 +567,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d4350', end
   }
 }
 
+.img-fluid {
+  box-shadow: 0px 6px 0px 5px rgba(0,0,0,0.53);
+}
+
 /*
 .cajaFraseHeader {
     font-size: 100px;
@@ -673,7 +595,4 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d4350', end
   }
 */
 
-.img-fluid {
-  box-shadow: 0px 6px 0px 5px rgba(0,0,0,0.53);
-}
 
