@@ -13,11 +13,6 @@ li {
   font-weight: bold;
 }
 
-/*body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}*/
 .container-fluid {
   background: linear-gradient(to top, #1D4350, #182848);
 }
@@ -143,7 +138,6 @@ footer {
   color: #149ddd;
 }
 
-/* Mobile Navigation */
 .mobile-nav-toggle {
   position: fixed;
   right: 15px;
@@ -449,8 +443,9 @@ span {
   padding-top: 5%;
 }
 
-.formulario {
-  padding: 30%;
+.formulario, .formulario2 {
+  padding: 20%;
+  color: gray;
 }
 
 .carousel {
