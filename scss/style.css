@@ -454,10 +454,10 @@ span {
   flex-direction: column;
   align-items: center;
 }
-.carousel .carousel-caption {
-  color: #1D4350;
+.carousel .caption {
+  color: white;
   font: normal 18px "Permanent Marker", sans-serif;
-  transform: translateY(40%);
+  transform: translateY(10%);
 }
 
 .card {
@@ -469,11 +469,16 @@ span {
   color: #a8a9b4;
 }
 
+.pt1 {
+  display: flex;
+  flex-direction: column;
+}
+
 .fa-twitch, .fa-twitter, .fa-tiktok, .fa-instagram, .fa-discord, .fa-youtube {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding-top: 2%;
+  padding-top: 5%;
   margin: 5%;
   text-shadow: 0.025em 0.025em #ccc;
   color: #6441a5;
